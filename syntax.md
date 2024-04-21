@@ -26,4 +26,6 @@
     (raise_magnitude value)
 )
 ```
+use
+brun "$(run factorial.clsp)" "(5)"
 
