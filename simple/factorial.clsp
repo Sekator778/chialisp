@@ -1,0 +1,16 @@
+;;; Calculates a factorial recursively.
+;;; f(n) = n * f(n - 1)
+;;; f(n) = n if n <= 2
+
+(mod (number)
+    ; Defines the factorial function.
+    (defun factorial (number)
+        (if (> number 1)
+            (* number (factorial (- number 1)))
+            1
+        )
+    )
+
+    ; Calls the function with the number provided.
+    (factorial number)
+)
